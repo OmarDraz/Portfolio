@@ -17,7 +17,7 @@ export function About() {
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Since 2021, I've been on a journey of continuous growth in web development. 
+                Since 2022, I've been on a journey of continuous growth in web development. 
                 I started at <span className="text-foreground font-medium">ThemesCamp</span>, 
                 where I built and delivered 50+ premium animated WordPress themes ( some was with React-powered 
                 frontends ), learning the art of modular, maintainable code.
