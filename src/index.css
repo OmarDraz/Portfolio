@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark-only Design System - Vercel x Linear Aesthetic */
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 190 100% 50%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 190 80% 45%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 190 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --glow-primary: 0 0 60px hsl(190 100% 50% / 0.3);
+    --glow-subtle: 0 0 40px hsl(190 100% 50% / 0.15);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%) 0%, hsl(220 20% 8%) 50%, hsl(0 0% 4%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%) 0%, hsl(0 0% 6%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(190 100% 50%) 0%, hsl(210 100% 60%) 100%);
+    --noise-opacity: 0.03;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  ::selection {
+    background: hsl(190 100% 50% / 0.3);
+    color: hsl(0 0% 98%);
+  }
+}
+
+/* Noise texture overlay */
+@layer utilities {
+  .noise-bg {
+    position: relative;
+  }
+  
+  .noise-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: var(--noise-opacity);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
+  .glow {
+    box-shadow: var(--glow-primary);
+  }
+
+  .glow-subtle {
+    box-shadow: var(--glow-subtle);
+  }
+
+  .magnetic-hover {
+    transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+
+  .tilt-hover {
+    transition: transform 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  }
+
+  .tilt-hover:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) scale(1.02);
+  }
+
+  .card-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-shine::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 40%,
+      hsl(0 0% 100% / 0.03) 45%,
+      hsl(0 0% 100% / 0.05) 50%,
+      hsl(0 0% 100% / 0.03) 55%,
+      transparent 60%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+
+  .card-shine:hover::after {
+    transform: translateX(100%);
+  }
+}
