@@ -26,7 +26,8 @@ export function About() {
                 In 2024, I joined <span className="text-foreground font-medium">Scandiweb</span>, 
                 working on enterprise-level projects like the BMW Rockar platform and 
                 BTC Activewear. Here, I've been exposed to microservices architecture, 
-                AWS integrations, and the challenges of building at scale.
+                AWS integrations, and the challenges of building at scale. Since January 2026, 
+                I've been a Full Stack Engineer at <span className="text-foreground font-medium">CTCHealth</span>.
               </p>
               <p>
                 Throughout this time, I've also taken on freelance projects, delivering 

@@ -5,9 +5,26 @@ import { Briefcase, Building2, Globe } from "lucide-react";
 
 const experiences = [
   {
+    company: "CTCHealth",
+    role: "Full Stack Engineer",
+    period: "Jan 2026 – Present",
+    icon: Building2,
+    color: "primary",
+    projects: [
+      {
+        name: "Full Stack Engineering",
+        points: [
+          "Developing and maintaining scalable web solutions",
+          "Working across front-end and back-end tasks",
+          "Collaborating with cross-functional teams to deliver high-quality applications",
+        ],
+      },
+    ],
+  },
+  {
     company: "Scandiweb",
-    role: "Fullstack / React Engineer",
-    period: "2024 – Present",
+    role: "Full Stack Engineer",
+    period: "Oct 2024 – Jan 2026",
     icon: Building2,
     color: "primary",
     projects: [
@@ -33,7 +50,7 @@ const experiences = [
   {
     company: "ThemesCamp",
     role: "Frontend & WordPress Engineer",
-    period: "2021 – 2024",
+    period: "Oct 2022 – Oct 2024",
     icon: Briefcase,
     color: "accent",
     projects: [

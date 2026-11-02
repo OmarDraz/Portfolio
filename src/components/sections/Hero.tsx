@@ -82,7 +82,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
           className="flex flex-wrap items-center justify-center gap-4"
         >
-          <MagneticButton variant="primary" href="/files/Omar-Draz-Resume.pdf" download="Omar-Draz-Resume.pdf">
+          <MagneticButton variant="primary" href="/files/Omar%20Draz.pdf" download="Omar-Draz-Resume.pdf">
             <Download size={18} />
             Download CV
           </MagneticButton>
