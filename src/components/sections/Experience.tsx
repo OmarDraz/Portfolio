@@ -14,9 +14,10 @@ const experiences = [
       {
         name: "Full Stack Engineering",
         points: [
-          "Developing and maintaining scalable web solutions",
-          "Working across front-end and back-end tasks",
-          "Collaborating with cross-functional teams to deliver high-quality applications",
+          "Developing and maintaining scalable web applications across front-end and back-end",
+          "Integrating AI tools such as Vapi and LiveKit into web apps",
+          "Familiar with the modern AI stack and how to connect it to production products",
+          "Collaborating with cross-functional teams to ship high-quality applications",
         ],
       },
     ],

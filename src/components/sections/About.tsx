@@ -27,7 +27,8 @@ export function About() {
                 working on enterprise-level projects like the BMW Rockar platform and 
                 BTC Activewear. Here, I've been exposed to microservices architecture, 
                 AWS integrations, and the challenges of building at scale. Since January 2026, 
-                I've been a Full Stack Engineer at <span className="text-foreground font-medium">CTCHealth</span>.
+                I've been a Full Stack Engineer at <span className="text-foreground font-medium">CTCHealth</span>, 
+                integrating AI tools like Vapi and LiveKit into web applications and working with the modern AI stack.
               </p>
               <p>
                 Throughout this time, I've also taken on freelance projects, delivering 

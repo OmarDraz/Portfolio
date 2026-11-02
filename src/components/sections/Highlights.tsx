@@ -1,7 +1,11 @@
 import { AnimatedSection, StaggerContainer, StaggerItem } from "../ui/AnimatedSection";
-import { Zap, Server, Globe, Code2, Settings, Users } from "lucide-react";
+import { Bot, Zap, Server, Globe, Code2, Settings, Users } from "lucide-react";
 
 const highlights = [
+  {
+    icon: Bot,
+    text: "Integrating AI tools like Vapi and LiveKit into web applications at CTCHealth, with solid knowledge of the modern AI stack.",
+  },
   {
     icon: Server,
     text: "Worked on enterprise-scale microservices architecture at Scandiweb (BMW Rockar Project).",

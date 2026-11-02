@@ -12,9 +12,15 @@ import {
   Gauge,
   Palette,
   Component,
+  Bot,
+  Radio,
+  Sparkles,
 } from "lucide-react";
 
 const skills = [
+  { name: "Vapi Integration", icon: Bot },
+  { name: "LiveKit Integration", icon: Radio },
+  { name: "AI Stack Familiarity", icon: Sparkles },
   { name: "System Design", icon: Network },
   { name: "Microservices Architecture", icon: Boxes },
   { name: "REST API Design", icon: Code },
